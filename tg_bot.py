@@ -10,7 +10,7 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands=["start"])
 async def stand_command(message: types.Message):
-    await message.reply("Hi, I am a weather-bot, text me any city or town and I will try to find the current weather", reply_markup=k.kb_client)
+    await message.reply("Hi, I am a weather-bot, text me any city or town and I will try to find the current weather")
 
 @dp.message_handler()
 async def get_weather(message: types.Message):
